@@ -1,0 +1,126 @@
+/*html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}*/
+.theme-original-test {
+  --color-change-bt: gray;
+  --color-compbar-gradient-1: 96, 221, 142, 1;
+  --color-compbar-gradient-2: 24, 138, 141, 1;
+  --color-choices: 214, 253, 203;
+  --color-nav-grid-container: aquamarine;
+  --color-nav-grid-container-hover: cyan;
+  --color-nav-hide: #04aa6d;
+  --color-nav-hide-hover: #3e8e41;
+  --color-nav-hide-active: #3e8e41;
+  --color-nav-background: red;
+  --font-color: #000000;
+}
+
+/** theme for fall **/
+.theme-fall {
+  --color-change-bt: #e2711d; /** arrows**/
+  --color-compbar-gradient-1: 226, 113, 29, 0.9;
+  --color-compbar-gradient-2: 231, 207, 205, 0.8;
+  --color-choices: 239, 230, 221, 0.7;
+  --color-nav-grid-container: #e2711d; /** menu bar background**/
+  --color-nav-grid-container-hover: #f2a65a; /** menu bar hover **/
+  --color-nav-hide: gray; /** hide button for navigator **/
+  --color-nav-hide-hover: #e2711d; /** hover for hide button for navigator **/
+  --color-nav-hide-active: #e2711d; /** same color as above **/
+  --color-nav-background: #ffc971; /** nagivator background**/
+  --font-color: white; /** what is this**/
+  --color-title--: #e2711d; /** title color**/
+  --color-title-border--: #e7cfcd; /** border line beloew title**/
+  --color-calendar-today--: #ffc971; /** today in calendar**/
+  --color-choices--: #e2711d; /** word color in choices**/
+  --todo-box--: #ffc971;
+  --todo-border--: #e2711d;
+}
+
+/** theme for winter **/
+.theme-winter {
+  --color-change-bt: #7c98b3; /** arrows**/
+  --color-compbar-gradient-1: 124, 152, 179, 0.8;
+  --color-compbar-gradient-2: 241, 242, 246, 0.8;
+  --color-choices: 241, 242, 246, 0.7;
+  --color-nav-grid-container: #7c98b3; /** menu bar background**/
+  --color-nav-grid-container-hover: #7cb2c8; /** menu bar hover **/
+  --color-nav-hide: gray; /** hide button for navigator **/
+  --color-nav-hide-hover: #7c98b3; /** hover for hide button for navigator **/
+  --color-nav-hide-active: #7c98b3; /** same color as above **/
+  --color-nav-background: #c0d6df; /** nagivator background**/
+  --font-color: white; /** what is this**/
+  --color-title--: #7c98b3; /** title color**/
+  --color-title-border--: #c0d6df; /** border line beloew title**/
+  --color-calendar-today--: #c0d6df; /** today in calendar**/
+  --color-choices--: #7c98b3; /** word color in choices**/
+  --todo-box--: #c0d6df;
+  --todo-border--: #7c98b3;
+}
+
+/** theme for spring **/
+.theme-spring {
+  --color-change-bt: #188a84; /** arrows**/
+  --color-compbar-gradient-1: 24, 138, 141, 0.8;
+  --color-compbar-gradient-2: 96, 221, 142, 0.8;
+  --color-choices: 225, 232, 226, 0.8;
+  --color-nav-grid-container: #188a84; /** menu bar background**/
+  --color-nav-grid-container-hover: #72b3ad; /** menu bar hover **/
+  --color-nav-hide: gray; /** hide button for navigator **/
+  --color-nav-hide-hover: #188a84; /** hover for hide button for navigator **/
+  --color-nav-hide-active: #188a84; /** same color as above **/
+  --color-nav-background: #85c4bf; /** nagivator background**/
+  --font-color: white; /** what is this**/
+  --color-title--: #415d43; /** title color**/
+  --color-title-border--: #85c4bf; /** border line beloew title**/
+  --color-calendar-today--: #85c4bf; /** today in calendar**/
+  --color-choices--: #415d43; /** word color in choices**/
+  --todo-box--: #85c4bf;
+  --todo-border--: #188a84;
+}
+
+/** theme for summer **/
+
+.theme-summer {
+  --color-change-bt: #c251b5; /** arrows**/
+  --color-compbar-gradient-1: 198, 93, 184, 0.9;
+  --color-compbar-gradient-2: 227, 176, 220, 0.8;
+  --color-choices: 233, 220, 239, 0.8;
+  --color-nav-grid-container: #d279be; /** menu bar background**/
+  --color-nav-grid-container-hover: #d691c7; /** menu bar hover **/
+  --color-nav-hide: gray; /** hide button for navigator **/
+  --color-nav-hide-hover: #d279be; /** hover for hide button for navigator **/
+  --color-nav-hide-active: #d279be; /** same color as above **/
+  --color-nav-background: #ecc6ec; /** nagivator background**/
+  --font-color: white; /** what is this**/
+  --color-title--: #80007e; /** title color**/
+  --color-title-border--: #bf9fdf; /** border line beloew title**/
+  --color-calendar-today--: #ecc6ec; /** today in calendar**/
+  --color-choices--: #80007e; /** word color in choices**/
+  --todo-box--: #ecc6ec;
+  --todo-border--: #c251b5;
+}
+
+/** warm toned theme **/
+.theme-warm {
+  --color-change-bt: #bb9a81; /** arrows**/
+  --color-compbar-gradient-1: 201, 173, 127, 0.8;
+  --color-compbar-gradient-2: 229, 217, 189, 0.9;
+  --color-choices: 236, 228, 208, 0.8;
+  --color-nav-grid-container: #b58e64; /** menu bar background**/
+  --color-nav-grid-container-hover: #decfac; /** menu bar hover **/
+  --color-nav-hide: gray; /** hide button for navigator **/
+  --color-nav-hide-hover: #b58e64; /** hover for hide button for navigator **/
+  --color-nav-hide-active: #b58e64; /** same color as above **/
+  --color-nav-background: #decfac; /** nagivator background**/
+  --font-color: white; /** what is this**/
+  --color-title--: #a67c5b; /** title color**/
+  --color-title-border--: #bb9a81; /** border line beloew title**/
+  --color-calendar-today--: #decfac; /** today in calendar**/
+  --color-choices--: #a67c5b; /** word color in choices**/
+  --todo-box--: #decfac;
+  --todo-border--: #bb9a81;
+}

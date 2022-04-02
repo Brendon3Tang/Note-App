@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Add Component Style & Script Here-->
+    <script src="../../jquery-3.6.0.js"></script>
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="picture_style.css">
+    <script src="picture_script.js"></script>
+
+
+</head>
+
+<body>
+    <div class="picture_frame" id="picture-content">
+        <div id="image-wrapper">
+            <canvas id="canvas" height="290px" width="400px"></canvas>
+        </div>
+        <input type="file" name="image" id="image-input" accept="image/*" class="inputfile"><br>
+        <label for="image-input">Upload an Image</label>
+    </div>
+    <script src="draw_script.js"></script>
+    <script>
+        document.body.className = 'color-' + parent.parent.main_theme;
+    </script>
+</body>
+
+</html>

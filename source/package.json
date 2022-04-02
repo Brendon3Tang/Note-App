@@ -1,0 +1,36 @@
+{
+  "name": "source",
+  "version": "1.0.1",
+  "description": "added test and other stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse110-sp21-group33/cse110-sp21-group33.git"
+  },
+  "keywords": [
+    "UCSD-CSE110"
+  ],
+  "author": "Alexandre Marques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cse110-sp21-group33/cse110-sp21-group33/issues"
+  },
+  "homepage": "https://github.com/cse110-sp21-group33/cse110-sp21-group33#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.0.1",
+    "jest": "^27.0.1",
+    "jest-puppeteer": "^5.0.4",
+    "puppeteer": "^9.1.1"
+  },
+  "dependencies": {},
+  "jest": {
+    "preset": "jest-puppeteer",
+    "verbose": true
+  }
+}

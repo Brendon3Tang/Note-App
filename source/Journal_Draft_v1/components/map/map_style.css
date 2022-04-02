@@ -1,0 +1,58 @@
+.map-frame{
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  height: 380px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 600px auto;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  var(--gradient-1--) 0%, var(--gradient-2--) 90% );
+}
+#map {
+    height: 100%;
+}
+#comment-area{
+    border:hidden;
+    outline: none;
+    width: 90%;
+    height: 100%;
+    resize: none;
+    background-color: transparent;
+}
+.color-fall{
+    
+  --gradient-1--: rgb(226, 113, 29, 0.6);
+  --gradient-2--: rgb(252, 210, 159, 0.7);
+
+  
+
+}
+.color-winter{
+    
+  --gradient-1--: rgb(124, 152, 179, 0.8);
+  --gradient-2--: rgb(216, 226, 220, 0.8);
+
+  
+
+}
+.color-spring{
+    
+  --gradient-1--: rgb(24, 138, 141, 0.7);
+  --gradient-2--: rgb(96, 221, 142, 0.7);
+
+
+}
+.color-summer{
+    
+  --gradient-1--: rgb(198, 93, 184, 0.7);
+  --gradient-2--: rgb(230, 216, 224, 0.7);
+
+
+}
+
+.color-warm{
+    
+  --gradient-1--: rgb(201, 173, 127, 0.7);
+  --gradient-2--: rgb(229, 217, 189, 0.7);
+
+
+}

@@ -1,0 +1,98 @@
+@import 'themes.css';
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper-display {
+  background-color: var(--color-nav-background); /*theme*/
+  display: none;
+  border-radius: 10px;
+  margin: 0 0 0 0;
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+  grid-template-rows: 5% 50% 45%;
+}
+#menu {
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+}
+.hide {
+  position: absolute;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: var(--color-nav-hide); /*theme*/
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+}
+
+.hide:hover {
+  background-color: var(--color-nav-hide-hover);
+} /*theme*/
+
+.hide:active {
+  background-color: var(--color-nav-hide-active); /*theme*/
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.change-V {
+  position: absolute;
+  margin-left: 200px;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: var(--color-nav-hide); /*theme*/
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+}
+
+.change-V:hover {
+  background-color: var(--color-nav-hide-hover);
+} /*theme*/
+
+.change-V:active {
+  background-color: var(--color-nav-hide-active); /*theme*/
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#listMode {
+  justify-self: center;
+  width: 18em;
+  height: 20em;
+  line-height: 2em;
+  /* background-color: white; */
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+ol li {
+  padding-left: 5px;
+  margin-top: 3px;
+  list-style-type: none;
+  counter-increment: item;
+  background-color: white;
+  border-radius: 10px;
+}
+ol li:hover {
+  background-color: var(--color-nav-hide-hover);
+}
+
+ol li:active {
+  background-color: var(--color-nav-hide-active); /*theme*/
+}

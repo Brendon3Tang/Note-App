@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/pagestyle.css">
+    <link rel="stylesheet" href="styles/loading.css">
+    <link rel="stylesheet" href="styles/journal_title_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/pagescript.js" type="text/javascript"></script>
+    <script src="scripts/themes.js" type="text/javascript"></script>
+    <script src="emoji/emoji_picker/fgEmojiPicker.js"></script>
+    <style>
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        * {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading-state" class="loading"></div>
+    <main>
+        <div class="pagetitle">
+            <button class="emoji-selector"></button>
+            <input id="emoji-holder" placeholder="😃"></text>
+            <div class="input-name">
+                <input type="text" placeholder="Untitled Journal">
+                <span class="underline-animation"></span>
+            </div>
+            <button class="save-bt" onclick="parent.saveFunc();"><i class="fa fa-save"></i></button>
+            <button class="del-bt" onclick="parent.delFunc();"><i class="fa fa-trash"></i></button>
+            <script>
+                const emojiPicker = new FgEmojiPicker({
+                    trigger: ['.emoji-selector'],
+                    removeOnSelection: false,
+                    closeButton: true,
+                    position: ['bottom', 'right'],
+                    preFetch: true,
+                    insertInto: document.getElementById('emoji-holder'),
+                    emit(obj, triggerElement) {
+                    }
+                });
+            </script>
+        </div>
+
+        <div id="container">
+        </div>
+
+        <div class="compbar">
+            <p>+ Add Component</p>
+            <div class="choices">
+                <div class="button" onclick="textbox()">
+                    <!--icon,style-->
+                    <img src="icons/textfieldicon.png" alt="Textbox" style="width: 64px;height: 64px;">
+                    <!--text next to the icon-->
+                    <p>Textbox</p>
+                </div>
+                <div class="button" onclick="moodbar()">
+                    <img src="icons/moodicon.png" alt="Mood" style="width: 64px;height: 64px;">
+                    <p>Mood Bar</p>
+                </div>
+                <!--listener: add function to scripts/pagescript.js-->
+                <div class="button" onclick="link()">
+                    <!--icon,style-->
+                    <img src="icons/linkicon.png" alt="Link" style="width: 64px;height: 64px;">
+                    <!--text next to the icon-->
+                    <p>Hyperlink</p>
+                </div>
+                <!--Insert Buttons here...-->
+                <div class="button" onclick="map()">
+                    <!--icon,style-->
+                    <img src="icons/mapicon.png" alt="Map" style="width: 64px;height: 64px;">
+                    <!--text next to the icon-->
+                    <p>Map</p>
+                </div>
+                <!--Insert Buttons here...-->
+                <div class="button" onclick="todo()">
+                    <!--icon,style-->
+                    <img src="icons/todoicon.png" alt="Todo" style="width: 64px;height: 64px;">
+                    <!--text next to the icon-->
+                    <p>TODO</p>
+                </div>
+                <div class="button" onclick="picture()">
+                    <!--icon,style-->
+                    <img src="icons/pictureicon.png" alt="Picture" style="width: 64px;height: 64px;">
+                    <!--text next to the icon-->
+                    <p>Picture</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>

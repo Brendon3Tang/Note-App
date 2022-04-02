@@ -1,0 +1,33 @@
+@import 'themes.css';
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-grid-container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--color-nav-grid-container); /*theme*/
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
+.nav-grid-container > * {
+  display: flex;
+  width: 100%;
+  height: 99px;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.nav-grid-container > a > * {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+.nav-grid-container > *:hover {
+  background-color: var(--color-nav-grid-container-hover); /*theme*/
+}

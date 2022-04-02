@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/themes.css">
+    <link rel="stylesheet" href="styles/pagestyle.css">
+    <link rel="stylesheet" href="styles/radioButton.css">
+    <link rel="stylesheet" type="text/css" href="styles/jsCalendar.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/navigation.css">
+    <link rel="stylesheet" type="text/css" href="styles/setting.css">
+    <link rel="stylesheet" type="text/css" href="styles/help.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/todo.less">
+    <link rel="icon" href="https://static.thenounproject.com/png/2505432-200.png">
+    <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script type="text/javascript" src="scripts/home.js"></script>
+    <script type="text/javascript" src="scripts/jsCalendar.js"></script>
+    <script type="text/javascript" src="scripts/themes.js"></script>
+</head>
+
+<body>
+    <div id="settingsWindow" class="overlay-setting">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
+        <div class="overlay-content-setting">
+            <section>
+                <div>
+                    <input type="radio" id="warm_choice" name="select" value="1"
+                        onclick="changeColorsInPage('color-warm')">
+                    <label class="setting-label" for="warm_choice">
+                        <h2>Warm Theme</h2>
+                        <img src="themes/warm.png" style="width:150px;">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="spring_choice" name="select" value="1" checked
+                        onclick="changeColorsInPage('color-spring')">
+                    <label class="setting-label" for="spring_choice">
+                        <h2>Spring Theme</h2>
+                        <img src="themes/spring.png" style="width:150px;">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="summer_choice" name="select" value="1"
+                        onclick="changeColorsInPage('color-summer')">
+                    <label class="setting-label" for="summer_choice">
+                        <h2>Summer Theme</h2>
+                        <img src="themes/summer.png" style="width:150px;">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="fall_choice" name="select" value="1"
+                        onclick="changeColorsInPage('color-fall')">
+                    <label class="setting-label" for="fall_choice">
+                        <h2>Fall Theme</h2>
+                        <img src="themes/fall.png" style="width:150px;">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="winter_choice" name="select" value="1"
+                        onclick="changeColorsInPage('color-winter')">
+                    <label class="setting-label" for="winter_choice">
+                        <h2>Winter Theme</h2>
+                        <img src="themes/winter.png" style="width:150px;">
+                    </label>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="helpWindow" class="overlay-help">
+      <div class="overlay-content-help">
+        <a href="#">Help Menu</a>
+      </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeHelp()">&times;</a>
+    </div>
+    <div id="overall">
+        <div id="menu-bar">
+            <nav class="nav-grid-container">
+                <a href="#" id='nav'>
+                    <p>Navigator</p>
+                </a>
+                <a href="#">
+                    <p>Current</p>
+                </a>
+                <a href="#" id='settings'>
+                    <p>Theme</p>
+                </a>
+                <a href="#" id='help'>
+                    <p>Help</p>
+                </a>
+            </nav>
+        </div>
+
+        <div id='wrapper-display' class='calendarView'>
+            <div id='menu-buttons'>
+                <button class="hide">Hide This</button>
+                <button class='change-V'>Change View</button>
+            </div>
+            <div id="menu">
+                <div id="my-calender"></div>
+                <div id='my-list'>
+                    <ol id='listMode'></ol>
+                </div>
+            </div>
+            <ul class="list">
+            </ul>
+
+
+        </div>
+
+
+        <div id="display-journals" style="height: 90vh;">
+            <div class="change-bt">
+                <a href="#" class="previousRound">&#8249;</a>
+            </div>
+            <iframe class="pg" src="journalpg.htm" style="height: 95%; width: 820px;" title="Iframe Example"></iframe>
+            <div class="change-bt">
+                <a href="#" class="nextRound">&#8250;</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/script.js"></script> 
+</body>
+
+</html>

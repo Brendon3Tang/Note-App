@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Add component style and script here -->
+    <link rel="stylesheet" href="todo_style.css">
+    <!-- <script src="todo_script.js"></script> -->
+    <style>
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        * {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todo-frame">
+        <ul id="parent">
+            <!-- There will be some <li> tag  -->
+            <input type="text" id="inputValue" placeholder="Creating a new list here" autocomplete="off">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </ul>
+    </div>
+
+    <script src="todo_script.js"></script>
+    <script>
+        document.body.className = 'color-' + parent.parent.main_theme;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+@import 'themes.css';
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#overall {
+  display: grid;
+  grid-template-columns: 100px 400px 1030px;
+  background-color: white;
+}
+#display-journals {
+  min-width: 1030px;
+  min-height: 710px;
+  display: grid;
+  grid-template-columns: 100px 830px 100px;
+}
+.pg {
+  justify-self: center;
+  align-self: center;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+.change-bt {
+  display: grid;
+  height: 100%;
+  width: 100px;
+  font-size: 100px;
+}
+.change-bt > * {
+  color: var(--color-change-bt); /*theme*/
+  text-decoration: none;
+  align-self: center;
+  justify-self: center;
+}
+
+#wrapper-display.calendarView #my-calender {
+  display: block;
+}
+#wrapper-display.calendarView #my-list {
+  display: none;
+}
+#wrapper-display.listView #my-calender {
+  display: none;
+}
+#wrapper-display.listView #my-list {
+  display: block;
+}
